@@ -1,0 +1,28 @@
+//This is the shortcut(Built-in) form of the lexicographical problem
+// strcmp(string1, string2);
+
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+      
+    char arr1[100],arr2[100];
+    fgets(arr1,100,stdin);
+    fgets(arr2,100,stdin);
+    int v=strcmp(arr1,arr2);
+    //if v>0, 2nd value is smaller
+    //if v<0, 1st value is smaller
+    //else both are same
+    if (v<0)
+    {
+        printf("%s\n",arr1 );
+    }
+    else if (v>0)
+    {
+        printf("%s\n", arr2);
+    }
+    else{
+        printf("Equal");
+    }
+     return 0;
+}
